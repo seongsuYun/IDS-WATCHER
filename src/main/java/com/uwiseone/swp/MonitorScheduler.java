@@ -10,7 +10,7 @@ public class MonitorScheduler {
 	
 	private Logger log = LoggerFactory.getLogger(this.getClass());
 	
-	@Scheduled(cron = "* */10 * * * *")
+	@Scheduled(cron = "* */5 * * * *")
 	public void run() {
 		System.out.println("============scheduler start");
         SeleniumTest selTest = new SeleniumTest();
